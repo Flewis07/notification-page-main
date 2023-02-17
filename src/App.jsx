@@ -44,7 +44,7 @@ function App() {
   }, []);
 
   return (
-    <div className='container w-50 pt-4 pb-4 ps-3 pe-3'>
+    <div className='main w-md-75 m-auto pt-4 pb-4 ps-3 pe-3'>
       <Header title="Notifications" nbr="3" read="Mark all as read"/>
       {
         data.map(post => {

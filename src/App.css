@@ -5,23 +5,23 @@
   }
   
 
-.container {
+.main {
   background-color: #ffffff;
   font-family: "JakartaSans";
   border-radius: 10px;
+  width: 50%;
 }
 
 .notif-title {
   color: #191d25;
   font-size: 24px;
-  width: 20%;
   font-weight: bold;
 }
 
 .notifNbr {
   align-self: center;
   background-color: #0a3280;
-  width: 4%;
+  width: 30px;
   text-align: center;
   border-radius: 5px;
   font-weight: bold;
@@ -29,9 +29,10 @@
 
 .read {
   align-self: center;
-  width: 76%;
+  float: right;
   font-weight: 500;
   color: #616369;
+  margin-left: auto;
 }
 
 .avatar img, .picture img {
@@ -80,10 +81,16 @@
   font-size: 16px;
 }
 
+.orange {
+  width: 20px;
+  align-self: center;
+}
+
 .orange-circle {
   width: 10px;
   height: 10px;
   background-color: hsl(1, 90%, 64%);
-  align-self: center;
   border-radius: 100%;
 }
+
+

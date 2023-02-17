@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "JakartaSans";
+  src: local("JakartaSans"),
+   url("./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  }
+  
+
+.container {
+  background-color: #ffffff;
+  font-family: "JakartaSans";
+  border-radius: 10px;
+}
+
+.notif-title {
+  color: #191d25;
+  font-size: 24px;
+  width: 20%;
+  font-weight: bold;
+}
+
+.notifNbr {
+  align-self: center;
+  background-color: #0a3280;
+  width: 4%;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.read {
+  align-self: center;
+  width: 76%;
+  font-weight: 500;
+  color: #616369;
+}
+
+.avatar img, .picture img {
+  width: 90px;
+  padding: 20px;
+}
+
+.picture {
+  width: 28%;
+}
+
+.picture img {
+  float: right;
+}
+
+.content {
+  align-self: center;
+  padding: 20px;
+}
+
+.content span {
+  margin-right: 5px;
+}
+
+.notif {
+  border-radius: 5px;
+}
+
+.unread {
+  background-color: #f6fafd;
+}
+
+.grey-text {
+  color: #686d71;
+}
+
+.dark-blue-text {
+  color: hsl(219, 85%, 26%);
+}
+
+.message {
+  border: 1px solid hsl(205, 33%, 90%);
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.orange-circle {
+  width: 10px;
+  height: 10px;
+  background-color: hsl(1, 90%, 64%);
+  align-self: center;
+  border-radius: 100%;
+}

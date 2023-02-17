@@ -1,0 +1,80 @@
+{
+        "posts": [{
+            "avatar" : "src/assets/images/avatar-mark-webber.webp",
+            "name" : "Mark Webber",
+            "event" : "reacted to your recent post",
+            "post" : "My first tournament today!",
+            "group": "",
+            "message" : "",
+            "picture" : "",
+            "time" : "1m ago",
+            "unread" : true
+        },
+        {
+            "avatar" : "src/assets/images/avatar-angela-gray.webp",
+            "name" : "Angela Grey",
+            "event" : "followed you",
+            "post" : "",
+            "group" : "",
+            "message" : "",
+            "picture" : "",
+            "time" : "5m ago",
+            "unread" : true
+        },
+        {
+            "avatar" : "src/assets/images/avatar-jacob-thompson.webp",
+            "name" : "Jacob Thompson",
+            "event" : "had joined your group",
+            "post" : "",
+            "group" : "Chess Club",
+            "message" : "",
+            "picture" : "",
+            "time" : "1 day ago",
+            "unread" : true
+        },
+        {
+            "avatar" : "src/assets/images/avatar-rizky-hasanuddin.webp",
+            "name" : "Rizky Hasanuddin",
+            "event" : "sent you a private message",
+            "post" : "",
+            "group" : "",
+            "message" : "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+            "picture" : "",
+            "time" : "5 days ago",
+            "unread" : false
+        },
+        {
+            "avatar" : "src/assets/images/avatar-kimberly-smith.webp",
+            "name" : "Kimberly Smith",
+            "event" : "commented on your picture",
+            "post" : "",
+            "group" : "",
+            "message" : "",
+            "picture" : "src/assets/images/image-chess.webp",
+            "time" : "1 week ago",
+            "unread" : false
+        },
+        {
+            "avatar" : "src/assets/images/avatar-nathan-peterson.webp",
+            "name" : "Nathan Peterson",
+            "event" : "reacted to your recent post",
+            "post" : "5 end- game strategies to increase vour win rate",
+            "group" : "",
+            "message" : "",
+            "picture" : "",
+            "time" : "2 weeks ago",
+            "unread" : false
+        },
+        {
+            "avatar" : "src/assets/images/avatar-anna-kim.webp",
+            "name" : "Anna Kim",
+            "event" : "left the group",
+            "post" : "",
+            "group" : "Chess Club",
+            "message" : "",
+            "picture" : "",
+            "time" : "2 weeks ago",
+            "unread" : false
+        }
+    ]
+}

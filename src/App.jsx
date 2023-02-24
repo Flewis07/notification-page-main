@@ -1,5 +1,4 @@
 import { useState, Component, useEffect } from 'react';
-import { ReactDOM } from 'react';
 import './App.css';
 import Header from "./containers/Header/Header";
 import Card from "./containers/Card/Card"
@@ -28,11 +27,9 @@ function App() {
       }
     })
     .then(function(response) {
-      console.log(response);
       return response.json();
     })
     .then(function(myjson) {
-      console.log(myjson);
       setData(myjson.posts);
     });
   }
@@ -40,25 +37,59 @@ function App() {
   useEffect(() => {
     
     getData()
-    console.log(data.length);
   }, []);
+
+  const handleUnreadNotifications= () => {
+    let nbr = 0;
+    for (let i = 0; i < data.length; i++){
+      if(data[i].unread){
+        nbr++;
+      }
+    }
+    return nbr;
+  }
+
+  const handleRead = (index) => {
+    let copieData = [...data];
+    copieData[index].unread = ! copieData[index].unread;
+    setData(copieData);
+  }
+
+  const handleAllRead = () => {
+
+    let copieData = [...data];
+    for (let i = 0; i < copieData.length; i++){
+      if(copieData[i].unread){
+        copieData[i].unread = ! copieData[i].unread;
+      }
+    }
+    console.log(copieData);
+    setData(copieData);
+  }
 
   return (
     <div className='main w-md-75 m-auto pt-4 pb-4 ps-3 pe-3'>
-      <Header title="Notifications" nbr="3" read="Mark all as read"/>
+      <Header 
+        title="Notifications" 
+        nbr={handleUnreadNotifications()} 
+        read="Mark all as read"
+        clic={() => handleAllRead()}/>
       {
-        data.map(post => {
+        data.map((post, index) => {
           return(
-            <Card 
+            <Card
+                key={index}
                 avatar={post.avatar} 
                 name={post.name} 
-                event={post.event} 
+                event={post.event}
+                index={index} 
                 post={post.post} 
                 group={post.group}
                 message={post.message}
                 picture={post.picture}
                 time={post.time}
                 unread={post.unread}
+                clic={handleRead}
             />
           )
         })

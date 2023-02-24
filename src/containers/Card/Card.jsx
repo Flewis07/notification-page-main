@@ -18,23 +18,24 @@ export default function Car(props){
             <div className="content">
                 <div className="d-flex">
                     <div>
-                        <span className="fw-bold">{props.name}</span>
+                        <span className="clickable fw-bold">{props.name}</span>
                         <span className="grey-text">{props.event}</span>
                         {
-                            props.post !== "" && <span className="grey-text fw-bold">{props.post}</span>
+                            props.post !== "" && <span className="clickable grey-text fw-bold">{props.post}</span>
                         }
                         {
                             props.group !== "" && 
-                            <span className="dark-blue-text fw-bold d-flex">{props.group}</span>
+                            <span className="clickable grey-text fw-bold">{props.group}</span>
                         } 
                         {
-                            props.unread && <div className="orange-circle"></div>
+                            props.unread && 
+                            <span className="orange-circle" onClick={() => props.clic(props.index)}></span>
                         }
                     </div>
                 </div>
                 <div className="mt-1 mb-1 grey-text">{props.time}</div>
                 {
-                    props.message !== "" && <div className="message grey-text">{props.message}</div>
+                    props.message !== "" && <div className="clickable-msg message grey-text">{props.message}</div>
                 }
             </div>
             {

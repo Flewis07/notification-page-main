@@ -12,6 +12,12 @@
   width: 50%;
 }
 
+@media only screen and (max-width: 768px) {
+  .main {
+    width: 95%;
+  }
+}
+
 .notif-title {
   color: #191d25;
   font-size: 24px;
